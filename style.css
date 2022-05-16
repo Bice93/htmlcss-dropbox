@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+header{
+    max-width: 100%;
+    height: 50px;
+    background-color: azure;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-header-left, .box-header-right{
+    max-width: 30%;
+    background-color: aqua;
+    align-content: center;
+    display: flex;
+}
+
+.box-header-left > *,
+.box-header-right > *
+{
+    align-self: center;
+}
+
+/* main top */
+.top{
+    background-color: rgb(144, 245, 245);
+    width: 100%;
+}
+
+.box-big{
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    content: "";
+    display: table;
+    clear: both;
+    position: relative;
+    top: 30px;
+}
+
+.title-box-big{
+    border: 1px solid black;
+    width: 100%;
+    height: 100px;  
+}
+
+.text-box-big{
+    border: 1px solid black;
+    width: 40%;
+    float: left;
+}
+.image-box-big{
+    border: 1px solid black;
+    width: 60%;
+    height: calc(500px - 100px);
+    float: right;
+}
+
+/* main center */
+.center{
+    background-color: cadetblue;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.box-small{
+    width: 1000px;
+    margin: 0 auto;
+    background-color: lightskyblue;
+}
+
+/* Prima sezione blocco centrale */
+
+.section-one-center{
+    border: 1px solid black;
+    background-color: aquamarine;
+}
+
+.section-one-center > *{
+    margin: 20px 0px;
+}
+
+.big-card-top{
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    background-color: bisque;
+}
+
+.card{
+    width: calc(100% / 3 - 20px);
+    background-color: aliceblue;
+    flex-shrink: 0;
+}
+
+.name-card{
+    text-align: center;
+    border: 1px solid black;
+    background-color: beige;
+}
+
+.text-card{
+    padding: 0px 10px;
+    background-color: blanchedalmond;
+}
+
+.big-card-bottom{
+    width: 100%;
+    border: 1px solid black;
+    background-color: bisque;
+}
+
+.big-card-bottom .text-card{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text-carbott-big{
+    flex-basis: 70%;
+    border: 1px solid black;
+}
+
+.text-carbott-small{
+    flex-basis: 30%;
+    border: 1px solid black;
+    text-align: center;
+}
+
+/* seconda sezione blocco centrale */
+.section-two-center{
+    border: 1px solid black;
+    background-color: rgb(111, 179, 111);
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-center-left{
+    max-width: 60%;
+    border: 1px solid black;
+    height: 200px;
+}
+
+.box-center-right{
+    max-width: 40%;
+    border: 1px solid black;
+}
+
+/* terza sezione blocco centrale */
+.section-three-center{
+    background-color: rgb(163, 211, 195);
+}
+
+.section-three-center > *{
+    padding: 20px 0;
+}
+
+.small-card-center{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: antiquewhite;
+    justify-content: space-between;
+    height: 700px;
+}
+
+.small-card{
+    width: calc(100% / 3 - 20px);
+    background-color:chocolate;
+    height: 300px;
+}
