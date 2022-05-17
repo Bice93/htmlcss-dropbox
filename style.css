@@ -81,7 +81,6 @@ header{
 
 .box-big{
     width: 1000px;
-    height: 400px;
     margin: 0 auto;
 }
 
@@ -332,7 +331,7 @@ h2{
     background-color: rgb(163, 211, 195);
 }
 
-.section-three-center > *{
+.section-three-center > h2{
     padding: 20px 0;
 }
 
@@ -342,13 +341,31 @@ h2{
     flex-wrap: wrap;
     background-color: antiquewhite;
     justify-content: space-between;
-    height: 700px;
+    gap: 20px;
 }
 
 .small-card{
     width: calc(100% / 3 - 20px);
     background-color:chocolate;
-    height: 300px;
+    border: 1px solid black;
+    font-size: 14px;
+}
+
+.img-small-card img{
+    width: 100%;
+}
+
+.small-card h4{
+    margin-bottom: 10px;
+}
+
+/* quarta sezione blocco centrale */
+.box-center-left > *{
+    margin: 50px 0px;
+}
+
+.box-center-left a{
+    color: blue;
 }
 
 /* quinta sezione blocco centrale */
@@ -370,6 +387,28 @@ h2{
     flex-wrap: wrap;
 }
 
+.box-center-five{
+    padding: 30px;
+    max-height: 100%;
+    overflow: auto;
+}
+
+.logo-box-five{
+    width: 50%;
+}
+
+.line{
+    width: 150px;
+    border: 1px solid grey;
+    background-color: grey;
+    margin: 20px 0px;
+}
+
+.box-center-five p{
+    padding: 15px 0;
+    font-size: 14px;
+}
+
 .box-right-five{
     display: flex;
     flex-wrap: wrap;
@@ -384,10 +423,14 @@ h2{
 }
 
 .square1 img{
+    color: white;
     width: 50%;
     position: absolute;
-    bottom: 25%;
-    left: 25%;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
 
 .square2{
@@ -395,29 +438,58 @@ h2{
     flex-shrink: 0;
     width: 50%;
     padding-top: 50%;
+    position: relative;
 }
+
+.square2 img{
+    width: 50%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
 .square3{
     background-color: rgb(190, 150, 227);
     flex-shrink: 0;
     width: 50%;
     padding-top: 50%;
+    position: relative;
 }
+
+.square3 img{
+    width: 50%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
 .square4{
     background-color: rgb(142, 205, 242);
     flex-shrink: 0;
     width: 50%;
     padding-top: 50%;
+    position: relative;
 }
 
-.box-center-five{
-    padding: 20px;
-    max-height: 100%;
-    overflow: auto;
+.square4 img{
+    width: 50%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
 
 /* sesta sezione blocco centrale */
 .section-six-center{
-    background-color: rgb(109, 200, 200);
+    background-color: #b4d0e7;
     width: 100%;
 }
 
@@ -425,9 +497,17 @@ h2{
     width: 800px;
     margin: 0 auto;
     border: 1px solid black;
-    background-color: rgb(111, 179, 111);
+    background-color:antiquewhite;
     display: flex;
     justify-content: space-between;
+}
+
+.card-link-white{
+    border: 1px solid white;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    padding: 5px 30px;
 }
 
 /* settima sezione blocco centrale */
@@ -436,14 +516,42 @@ h2{
     border: 1px solid black;
 }
 
+.section-seven-center h2{
+    padding: 30px 0px;
+    font-size: 25px;
+    border-bottom: 1px solid grey;
+}
+
+.text-box-seven{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+    padding: 30px 0px;
+}
+
+.text-seven{
+    width: 80%;
+    background-color: bisque;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.icon-seven{
+    width: 20%;
+    background-color: aqua;
+    text-align: center;
+    font-size: 13px;
+}
+
 /* footer */
 footer{
     width: 100%;
     background-color: grey;
+    padding: 20px 0px;
 }
 
 footer .box-big{
-    background-color: bisque;
+    background-color: rgb(224, 165, 93);
 }
 
 .box-list-footer{
@@ -456,4 +564,31 @@ footer .box-big{
 .list-footer{
     border: 1px solid red;
     width: calc(100% / 5 - 5px);
+}
+
+.list-footer h3{
+    padding: 10px 0px;
+    color: white;
+}
+
+.list-footer ul, .list-footer a{
+    list-style: none;
+    text-decoration: none;
+    line-height: 30px;
+    font-size: 13px;
+    color: white;
+}
+
+.long-row{
+    width: 100px;
+    border: 1px solid white;
+    background-color: white;
+    margin: 10px 0px;
+}
+
+.language{
+    background-color: aquamarine;
+    margin: 10px 0px;
+    font-size: 12px;
+    color: grey;
 }
