@@ -4,17 +4,25 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
 /* header */
 header{
-    max-width: 100%;
-    height: 50px;
+    
+    height: 70px;
     background-color: azure;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
 }
 
 .box-header-left, .box-header-right{
-    max-width: 30%;
+    width: 40%;
     background-color: aqua;
     align-content: center;
     display: flex;
@@ -26,14 +34,53 @@ header{
     align-self: center;
 }
 
+.box-header-right{
+    justify-content: flex-end;
+}
+
+.logo{
+    padding: 0 10px;
+}
+
+.list-header{
+    display: flex;
+    list-style: none;
+}
+
+.list-header > li{
+    padding: 5px;
+}
+
+.list-header button{
+    padding: 7px;
+    border:none;
+    background-color: white;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.button-right{
+    display: flex;
+    padding-right: 10px;
+}
+
+#start {
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: rgb(94, 94, 242);
+    color: white;
+    align-self: center;
+}
+
 /* main top */
 .top{
-    background-color: rgb(144, 245, 245);
+    background-color: rgb(178, 225, 253);
     width: 100%;
+    margin-top: 70px;
 }
 
 .box-big{
-    width: 1200px;
+    width: 1000px;
     height: 400px;
     margin: 0 auto;
 }
@@ -50,19 +97,46 @@ header{
 .title-box-big{
     border: 1px solid black;
     width: 100%;
-    height: 100px;  
+    height: 150px; 
+    font-size: 55px; 
+    line-height: 60px;
 }
 
 .text-box-big{
     border: 1px solid black;
-    width: 40%;
+    width: 30%;
     float: left;
+    font-size: 13px;
+}
+
+.text-box-big *{
+    margin-bottom: 20px;
+}
+
+.card-link{
+    text-decoration: none;
+    background-color: rgb(52, 52, 251);
+    color: white;
+    display: inline-block;
+    padding: 5px 30px;
+    margin: 20px 0;
+}
+
+.icon-arrow{
+    font-size: 40px;
+    color: black;
+    margin-top: 70px;
 }
 .image-box-big{
     border: 1px solid black;
-    width: 60%;
-    height: calc(400px - 100px);
+    width: 70%;
+    /* height: calc(400px - 100px); */
     float: right;
+
+}
+
+img{
+    width: 100%;
 }
 
 /* main center */
@@ -73,7 +147,7 @@ header{
 }
 
 .box-small{
-    width: 1000px;
+    width: 800px;
     margin: 0 auto;
     /* background-color: lightskyblue; */
 }
@@ -89,6 +163,33 @@ header{
     margin: 20px 0px;
 }
 
+h2{
+    font-size: 30px;
+}
+
+.bill{
+    display: flex;
+}
+
+.check{
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid grey;
+    align-self: center;
+}
+
+.sales{
+    padding-left: 3px;
+    margin-right: 20px;
+}
+
+.check:active{
+    border: 4px solid blue;
+}
+
+/* carte verticali della prima sezione */
 .big-card-top{
     border: 1px solid red;
     display: flex;
@@ -100,23 +201,70 @@ header{
     width: calc(100% / 3 - 20px);
     background-color: aliceblue;
     flex-shrink: 0;
+    font-size: 13px;
+    border: 1px solid black;
 }
 
 .name-card{
     text-align: center;
+    padding: 5px;
     border: 1px solid black;
     background-color: beige;
 }
 
 .text-card{
-    padding: 0px 10px;
     background-color: blanchedalmond;
+    padding: 15px;
 }
 
+.text-card > *{
+    margin: 10px 0px;
+}
+
+.title-card{
+    font-size: 20px;
+}
+
+.list-top-text-card{
+    list-style: none;
+    margin-left: 20px;
+}
+
+.list-top-text-card li,
+.list-bottom-text-card li{
+    margin: 10px 0px;
+}
+
+.buy{
+    color: blue;
+}
+
+.short-row{
+    width: 50px;
+    border: 1px solid lightgray;
+    background-color: lightgrey;
+    margin: 20px 0px;
+}
+
+.text-small-bold{
+    font-weight: bold;
+}
+
+.list-bottom-text-card{
+    list-style: none;
+    margin-left: 20px;
+   
+}
+
+.list-bottom-text-card i{
+    color: blue;
+}
+/* carta orizzontale della prima sezione  */
 .big-card-bottom{
     width: 100%;
     border: 1px solid black;
     background-color: bisque;
+    font-size: 13px;
 }
 
 .big-card-bottom .text-card{
@@ -127,6 +275,10 @@ header{
 .text-carbott-big{
     flex-basis: 70%;
     border: 1px solid black;
+}
+
+.text-carbott-big *{
+    margin: 10px 0px;
 }
 
 .text-carbott-small{
@@ -147,13 +299,32 @@ header{
 .box-center-left{
     max-width: 60%;
     border: 1px solid black;
-    height: 200px;
+}
+
+.box-center-left img{
+    width: 100%;
+    display: block;
 }
 
 .box-center-right{
     max-width: 40%;
     border: 1px solid black;
+    padding-left: 30px;
+    font-size: 14px;
+    align-self: center;
 }
+
+.box-center-right *{
+    margin: 20px 0px;
+}
+
+.search{
+    text-decoration: none;
+    border: 1px solid black;
+    background-color: white;
+    padding: 10px;
+}
+
 
 /* terza sezione blocco centrale */
 .section-three-center{
@@ -209,6 +380,14 @@ header{
     flex-shrink: 0;
     width: 50%;
     padding-top: 50%;
+    position: relative;
+}
+
+.square1 img{
+    width: 50%;
+    position: absolute;
+    bottom: 25%;
+    left: 25%;
 }
 
 .square2{
@@ -243,7 +422,7 @@ header{
 }
 
 .box-six-center{
-    width: 1000px;
+    width: 800px;
     margin: 0 auto;
     border: 1px solid black;
     background-color: rgb(111, 179, 111);
