@@ -10,9 +10,8 @@ body{
 
 /* header */
 header{
-    
+    background-color: white;
     height: 70px;
-    background-color: azure;
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -23,7 +22,6 @@ header{
 
 .box-header-left, .box-header-right{
     width: 40%;
-    background-color: aqua;
     align-content: center;
     display: flex;
 }
@@ -67,14 +65,14 @@ header{
 #start {
     text-decoration: none;
     padding: 5px 10px;
-    background-color: rgb(94, 94, 242);
+    background-color: #0061ff;
     color: white;
     align-self: center;
 }
 
 /* main top */
 .top{
-    background-color: rgb(178, 225, 253);
+    background-color: #b4d0e7;
     width: 100%;
     margin-top: 70px;
 }
@@ -85,16 +83,14 @@ header{
 }
 
 .top .box-big{
-    background-color: antiquewhite;
     content: "";
     display: table;
     clear: both;
     position: relative;
-    top: 30px;
+    top: 50px;
 }
 
 .title-box-big{
-    border: 1px solid black;
     width: 100%;
     height: 150px; 
     font-size: 55px; 
@@ -102,7 +98,6 @@ header{
 }
 
 .text-box-big{
-    border: 1px solid black;
     width: 30%;
     float: left;
     font-size: 13px;
@@ -114,7 +109,7 @@ header{
 
 .card-link{
     text-decoration: none;
-    background-color: rgb(52, 52, 251);
+    background-color: #0061ff;
     color: white;
     display: inline-block;
     padding: 5px 30px;
@@ -126,12 +121,10 @@ header{
     color: black;
     margin-top: 70px;
 }
-.image-box-big{
-    border: 1px solid black;
-    width: 70%;
-    /* height: calc(400px - 100px); */
-    float: right;
 
+.image-box-big{
+    width: 70%;
+    float: right;
 }
 
 img{
@@ -140,22 +133,19 @@ img{
 
 /* main center */
 .center{
-    /* background-color: cadetblue; */
     width: 100%;
-    padding: 40px 0;
+    padding-top: 70px;
 }
 
 .box-small{
     width: 800px;
     margin: 0 auto;
-    /* background-color: lightskyblue; */
 }
 
 /* Prima sezione blocco centrale */
 
 .section-one-center{
-    border: 1px solid black;
-    background-color: aquamarine;
+    
 }
 
 .section-one-center > *{
@@ -190,29 +180,24 @@ h2{
 
 /* carte verticali della prima sezione */
 .big-card-top{
-    border: 1px solid red;
     display: flex;
     justify-content: space-between;
-    background-color: bisque;
 }
 
 .card{
     width: calc(100% / 3 - 20px);
-    background-color: aliceblue;
     flex-shrink: 0;
     font-size: 13px;
-    border: 1px solid black;
+    border: 1px solid grey;
 }
 
 .name-card{
     text-align: center;
     padding: 5px;
-    border: 1px solid black;
-    background-color: beige;
+    border-bottom: 1px solid grey;
 }
 
 .text-card{
-    background-color: blanchedalmond;
     padding: 15px;
 }
 
@@ -261,8 +246,7 @@ h2{
 /* carta orizzontale della prima sezione  */
 .big-card-bottom{
     width: 100%;
-    border: 1px solid black;
-    background-color: bisque;
+    border: 1px solid grey;
     font-size: 13px;
 }
 
@@ -273,7 +257,7 @@ h2{
 
 .text-carbott-big{
     flex-basis: 70%;
-    border: 1px solid black;
+   
 }
 
 .text-carbott-big *{
@@ -282,22 +266,19 @@ h2{
 
 .text-carbott-small{
     flex-basis: 30%;
-    border: 1px solid black;
+    
     text-align: center;
 }
 
 /* seconda sezione blocco centrale */
 .section-two-center{
     margin: 20px 0;
-    border: 1px solid black;
-    background-color: rgb(111, 179, 111);
     display: flex;
     justify-content: space-between;
 }
 
 .box-center-left{
     max-width: 60%;
-    border: 1px solid black;
 }
 
 .box-center-left img{
@@ -307,7 +288,6 @@ h2{
 
 .box-center-right{
     max-width: 40%;
-    border: 1px solid black;
     padding-left: 30px;
     font-size: 14px;
     align-self: center;
@@ -319,7 +299,7 @@ h2{
 
 .search{
     text-decoration: none;
-    border: 1px solid black;
+    border: 1px solid grey;
     background-color: white;
     padding: 10px;
 }
@@ -328,7 +308,6 @@ h2{
 /* terza sezione blocco centrale */
 .section-three-center{
     margin: 20px 0;
-    background-color: rgb(163, 211, 195);
 }
 
 .section-three-center > h2{
@@ -339,15 +318,12 @@ h2{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    background-color: antiquewhite;
     justify-content: space-between;
     gap: 20px;
 }
 
 .small-card{
     width: calc(100% / 3 - 20px);
-    background-color:chocolate;
-    border: 1px solid black;
     font-size: 14px;
 }
 
@@ -360,8 +336,12 @@ h2{
 }
 
 /* quarta sezione blocco centrale */
+.box-center-left{
+    margin: 100px 0;
+}
+
 .box-center-left > *{
-    margin: 50px 0px;
+   padding: 30px 0;
 }
 
 .box-center-left a{
@@ -414,6 +394,7 @@ h2{
     flex-wrap: wrap;
 }
 
+
 .square1{
     background-color: blueviolet;
     flex-shrink: 0;
@@ -423,7 +404,6 @@ h2{
 }
 
 .square1 img{
-    color: white;
     width: 50%;
     position: absolute;
     margin: auto;
@@ -496,10 +476,12 @@ h2{
 .box-six-center{
     width: 800px;
     margin: 0 auto;
-    border: 1px solid black;
-    background-color:antiquewhite;
     display: flex;
     justify-content: space-between;
+}
+
+.box-six-center h2{
+    color: #61082b;
 }
 
 .card-link-white{
@@ -513,7 +495,6 @@ h2{
 /* settima sezione blocco centrale */
 .section-seven-center{
     margin: 20px 0;
-    border: 1px solid black;
 }
 
 .section-seven-center h2{
@@ -531,14 +512,12 @@ h2{
 
 .text-seven{
     width: 80%;
-    background-color: bisque;
     font-size: 13px;
     font-weight: bold;
 }
 
 .icon-seven{
     width: 20%;
-    background-color: aqua;
     text-align: center;
     font-size: 13px;
 }
@@ -546,23 +525,20 @@ h2{
 /* footer */
 footer{
     width: 100%;
-    background-color: grey;
+    background-color: rgb(33, 33, 33);
     padding: 20px 0px;
 }
 
 footer .box-big{
-    background-color: rgb(224, 165, 93);
 }
 
 .box-list-footer{
     display: flex;
     justify-content: space-between;
     height: 300px;
-    border: 1px solid black;
 }
 
 .list-footer{
-    border: 1px solid red;
     width: calc(100% / 5 - 5px);
 }
 
@@ -587,7 +563,6 @@ footer .box-big{
 }
 
 .language{
-    background-color: aquamarine;
     margin: 10px 0px;
     font-size: 12px;
     color: grey;
