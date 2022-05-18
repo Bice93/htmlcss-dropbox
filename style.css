@@ -363,13 +363,12 @@ h2{
     background-color: azure;
     display: flex;
     width: 100%;
-    display: inline-flex;
 }
 
 .box-left-five, .box-center-five,
 .box-right-five{
     width: calc(100% / 3);
-    max-height: 506px;
+    height: calc(100vw / 3);
 }
 
 .box-left-five{
@@ -404,10 +403,10 @@ h2{
     flex-wrap: wrap;
 }
 
-.square1{
+.square{
     background-color: rgb(138, 43, 226);
     width: 50%;
-    padding-top: 50%;
+    height: 50%;
     position: relative;
 }
 
@@ -415,39 +414,26 @@ h2{
     filter: invert(100%);
     max-width: 50%;
     position: absolute;
-    margin: auto;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
 }
 
 .square2{
     background-color: brown;
-    width: 50%;
-    padding-top: 50%;
-    position: relative;
 }
 
 .square3{
     background-color: rgb(190, 150, 227);
-    width: 50%;
-    padding-top: 50%;
-    position: relative; 
-    flex-shrink: 0;
 }
 
 .square4{
     background-color: rgb(142, 205, 242);
-    width: 50%;
-    padding-top: 50%;
-    position: relative;
-    flex-shrink: 0;
 }
-
+/* effetti quinta sezione */
 .square1:hover, .square2:hover,
 .square3:hover, .square4:hover {
-    border: 10px solid rgba(250, 250, 250, 0.2);
+    border: 20px solid rgba(250, 250, 250, 0.2);
 }
 
 /* sesta sezione blocco centrale */
