@@ -405,7 +405,7 @@ h2{
 }
 
 .square1{
-    background-color: blueviolet;
+    background-color: rgb(138, 43, 226);
     width: 50%;
     padding-top: 50%;
     position: relative;
@@ -443,6 +443,11 @@ h2{
     padding-top: 50%;
     position: relative;
     flex-shrink: 0;
+}
+
+.square1:hover, .square2:hover,
+.square3:hover, .square4:hover {
+    border: 10px solid rgba(250, 250, 250, 0.2);
 }
 
 /* sesta sezione blocco centrale */
